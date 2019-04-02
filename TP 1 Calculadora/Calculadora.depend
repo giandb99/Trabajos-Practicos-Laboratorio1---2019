@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1554243830 source:c:\utn\programacion y laboratorio\lombardo\calculadora2masterproxd\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"math.h"
+	"math.c"
+
+1554241554 c:\utn\programacion y laboratorio\lombardo\calculadora2masterproxd\calculadora\math.h
+
+1554241554 c:\utn\programacion y laboratorio\lombardo\calculadora2masterproxd\calculadora\math.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1554243830 source:c:\utn\programacion y laboratorio\trabajo practicos lab 1\calculadora2masterproxd\tp 1 calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"math.h"
+	"math.c"
+
+1554241554 c:\utn\programacion y laboratorio\trabajo practicos lab 1\calculadora2masterproxd\tp 1 calculadora\math.h
+
+1554241554 c:\utn\programacion y laboratorio\trabajo practicos lab 1\calculadora2masterproxd\tp 1 calculadora\math.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

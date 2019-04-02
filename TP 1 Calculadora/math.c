@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// DESARROLLO DE FUNCIONES
 int ingresarOpcion(void)
 {
     int opcion;
@@ -27,6 +28,7 @@ void ingresarNumero(float* pNumero)
     scanf("%f",pNumero);
 }
 
+//CALCULOS
 int sumar(float numero1, float numero2)
 {
     float resultado;
@@ -66,15 +68,16 @@ int dividir(float numero1, float numero2)
     return resultado;
 }
 
-double mostrarFactorial(float numero1)
+//FACTORIZACION
+double mostrarFactorial(float numero)
 {
     int i;
     double resultado = 1;
 
-    for(i=(int)numero1;i>=1;i--)
+    for(i=(int)numero;i>=1;i--)
     {
         resultado=resultado*i;
     }
-    printf("El factorial de %.2f es %.2lf\n",numero1, resultado);
+    printf("El factorial de %.2f es %.2lf\n",numero, resultado);
     return resultado;
 }

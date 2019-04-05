@@ -21,20 +21,20 @@ int main()
 
         if(banderaA==1)
         {
-            printf("1.Ingrese el primer numero (A=%.2f)\n",numeroA);
+            printf("1.Ingresar el primer numero (A=%.2f)\n",numeroA);
         }
         else
         {
-            printf("1.Ingrese el primer numero (A=x)\n");
+            printf("1.Ingresar el primer numero (A=x)\n");
         }
 
         if(banderaB==1)
         {
-            printf("2.Ingrese el segundo numero (B=%.2f)\n",numeroB);
+            printf("2.Ingresar el segundo numero (B=%.2f)\n",numeroB);
         }
         else
         {
-            printf("2.Ingrese el segundo numero (B=x)\n");
+            printf("2.Ingresar el segundo numero (B=x)\n");
         }
 
         printf("3.Realizar los Calculos\n");
@@ -106,12 +106,15 @@ int main()
                 break;
 
             case 5:
-                printf("Saliendo...\n");
+
+                printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
+                printf("Saliendo... Gracias por usar la calculadora!!\n\n");
+                printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
                 break;
 
             default:
                  printf("Error. Ingrese una opcion valida (1-5): ");
-
         }
 
         system("pause"); //pausa la consola

@@ -78,6 +78,6 @@ double mostrarFactorial(float numero)
     {
         resultado=resultado*i;
     }
-    printf("El factorial de %.2f es %.2lf\n",numero, resultado);
+    printf("El factorial de %.f es %.f\n",numero, resultado);
     return resultado;
 }

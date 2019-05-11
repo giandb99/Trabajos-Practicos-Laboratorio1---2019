@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1538626157 source:c:\utn\programacion y laboratorio\tp\tp de estructuras\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Funciones.h"
+
+1538626157 source:c:\utn\programacion y laboratorio\tp\tp de estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Funciones.h"
+
+1538626276 c:\utn\programacion y laboratorio\tp\tp de estructuras\funciones.h
+
+1557517756 source:c:\utn\programacion y laboratorio\trabajo practicos lab 1\tp de estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Funciones.h"
+
+1557539884 c:\utn\programacion y laboratorio\trabajo practicos lab 1\tp de estructuras\funciones.h
+
+1557541108 source:c:\utn\programacion y laboratorio\trabajo practicos lab 1\tp de estructuras\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Funciones.h"
+

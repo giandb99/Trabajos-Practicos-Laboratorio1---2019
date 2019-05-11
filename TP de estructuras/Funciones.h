@@ -1,7 +1,6 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
-#define EMPLEADOS 4
-
+#define EMPLEADOS 1000
 typedef struct
 {
     int id;
@@ -54,6 +53,7 @@ void averages(eEmployee[],int);
 
 //VALIDO LOS NUMEROS ENTEROS
 int getInt(char mensaje[]);
+
 
 float getFloat(char mensaje[]);
 

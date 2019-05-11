@@ -149,8 +149,6 @@ char answerF()
         printf("\nLa opcion ingresada no es valida. Ingrese N o S por favor: \n");
         fflush(stdin);
         scanf("%c",&answer);
-        system("pause");
-        system("cls");
     }
     return answer;
 }
@@ -166,7 +164,7 @@ int idF()
 void initEmployees(eEmployee listado[],int len,int valor)
 {
     int i;
-    for(i=0;i<len;i++)
+    for(i=0;i<=len;i++)
     {
         listado[i].isEmpty=valor;
     }
@@ -175,7 +173,7 @@ void initEmployees(eEmployee listado[],int len,int valor)
 int searchFree(eEmployee listado[],int len,int valor)
 {
     int i;
-    for(i=1;i<len;i++)
+    for(i=1;i<=len;i++)
     {
         if(listado[i].isEmpty==valor)
         {

@@ -27,6 +27,8 @@ char answerF()
         printf("\nLa opcion ingresada no es valida. Ingrese N o S por favor: \n");
         fflush(stdin);
         scanf("%c",&answer);
+        system("pause");
+        system("cls");
     }
     return answer;
 }
@@ -39,21 +41,24 @@ int idF()
     return id;
 }
 
-void initEmployees(eEmployee listado[],int len,int valor)
+void initEmployees(eEmployee listado[],int len)
 {
     int i;
-    for(i=0;i<=len;i++)
+    for(i=0;i<len;i++)
     {
-        listado[i].isEmpty=valor;
+        listado[i].isEmpty=1;
+
+         listado[i].id = 0;
+
     }
 }
 
-int searchFree(eEmployee listado[],int len,int valor)
+int searchFree(eEmployee listado[],int len)
 {
     int i;
-    for(i=1;i<=len;i++)
+    for(i=1;i<len;i++)
     {
-        if(listado[i].isEmpty==valor)
+        if(listado[i].isEmpty==1)
         {
             return i;
         }
@@ -61,11 +66,13 @@ int searchFree(eEmployee listado[],int len,int valor)
     return -1;
 }
 
-int addEmployees(eEmployee listado[],int auxFree)
+int addEmployees(eEmployee listado[],int auxFree,int len)
 {
     int i;
     i=auxFree;
-    listado[i].id=auxFree;
+    //listado[i].id=auxFree;
+
+    listado[i].id = mayorIdEstudio(listado, len) + 1;
 
     printf("\nEl id del empleado es: %d\n",auxFree);
     fflush(stdin);
@@ -220,10 +227,7 @@ void printEmployees(eEmployee listado[],int len)
             printf("\n\t%4d \t%12s \t%12s \t%10.2f \t%5d\n",listado[i].id,listado[i].lastName,listado[i].name,listado[i].salary,listado[i].sector);
         }
     }
-    if(listado[i].isEmpty==1)
-    {
-        printf("\nNo se ha ingresado ningun empleado\n");
-    }
+
 }
 
 void averages(eEmployee listado[],int len)
@@ -287,4 +291,20 @@ float getFloat(char mensaje[])
         floatADevolver = atof(auxiliarChar);
     }
     return floatADevolver;
+}
+
+int mayorIdEstudio(eEmployee listado[],int len)
+{
+    int i;
+    int flag = 0;
+    int aux = 0;
+    for(i=0; i<len; i++)
+    {
+        if(flag==0 || listado[i].id>aux)
+        {
+            aux = listado[i].id;
+            flag = 1;
+        }
+    }
+    return aux;
 }

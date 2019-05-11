@@ -1,6 +1,7 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
-#define EMPLEADOS 1000
+#define EMPLEADOS 10
+
 typedef struct
 {
     int id;
@@ -25,13 +26,13 @@ char answerF();
 int idF();
 
 //TODA LA LISTA DE EMPLEADOS A -1
-void initEmployees(eEmployee[],int,int);
+void initEmployees(eEmployee[],int);
 
 //BUSCO UN LUGAR LIBRE EN LA LISTA
-int searchFree(eEmployee[],int,int);
+int searchFree(eEmployee[],int);
 
 //AGREGO AL EMPLEADO
-int addEmployees(eEmployee[],int);
+int addEmployees(eEmployee[],int,int);
 
 //BUSCO AL EMPLEADO
 int findEmployeeById(eEmployee[],int,int);
@@ -54,7 +55,8 @@ void averages(eEmployee[],int);
 //VALIDO LOS NUMEROS ENTEROS
 int getInt(char mensaje[]);
 
-
 float getFloat(char mensaje[]);
+
+int mayorIdEstudio(eEmployee listado[],int len);
 
 #endif // FUNCIONES_H_INCLUDED

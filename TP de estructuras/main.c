@@ -15,7 +15,7 @@ int main()
     flag=0;
 
     eEmployee listado[EMPLEADOS];
-    initEmployees(listado,EMPLEADOS,-1);
+    initEmployees(listado,EMPLEADOS);
 
     do
     {
@@ -28,7 +28,7 @@ int main()
         switch(opcion)
         {
             case 1:
-                auxFree=searchFree(listado,EMPLEADOS,-1);
+                auxFree=searchFree(listado,EMPLEADOS);
                 if(auxFree==-1)
                 {
                     printf("\nNo hay mas lugar disponible.\n");
@@ -44,7 +44,7 @@ int main()
                     else
                     {
                         printf("\nSe ingresara empleado\n");
-                        addEmployees(listado,auxFree);
+                        addEmployees(listado,auxFree,EMPLEADOS);
                         flag=1;
                     }
                 }
